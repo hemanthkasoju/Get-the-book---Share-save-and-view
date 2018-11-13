@@ -32,7 +32,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     var genreData = ["Action", "Biography", "Children", "Cookbook", "Comics", "Diaries", "Drama", "Encyclopedia", "History", "Horror", "Romance", "Self Help", "Sci-fi"];
     
-    var langData = ["English (UK)", "English (US)", "French", "Spanish", "German" ]
+    //var langData = ["English (UK)", "English (US)", "French", "Spanish", "German" ]
     
     var picker = UIPickerView()
     
@@ -59,9 +59,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         picker.dataSource = self
         genreField.inputView = picker
         
-        // Do any additional setup after loading the view, typically from a nib.
+       
     }
-
 
 }
 
