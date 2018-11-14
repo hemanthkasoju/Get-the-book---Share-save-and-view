@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ViewController: UIViewController {
     
     
     //Label variables
@@ -18,32 +18,50 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var publisherLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var linkLabel: UILabel!
-    @IBOutlet weak var summaryLabel: UILabel!
+ //   @IBOutlet weak var summaryLabel: UILabel!
     
     //Text Field
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var authorField: UITextField!
     @IBOutlet weak var genreField: UITextField!
-    @IBOutlet weak var publisherFIeld: UITextField!
+    @IBOutlet weak var publisherField: UITextField!
     @IBOutlet weak var languageField: UITextField!
     @IBOutlet weak var linkField: UITextField!
     
-    @IBOutlet weak var summaryDescription: UITextView!
+    //@IBOutlet weak var summaryDescription: UITextView!
     
-    var genreData = ["Action", "Biography", "Children", "Cookbook", "Comics", "Diaries", "Drama", "Encyclopedia", "History", "Horror", "Romance", "Self Help", "Sci-fi"];
+    var gpicker = UIPickerView()
+    var lpicker = UIPickerView()
     
-    //var langData = ["English (UK)", "English (US)", "French", "Spanish", "German" ]
+    let genreDataDelegate = GenrePickerDelegate()
+    let langDataDelegate = LangPickerDelegate()
     
-    var picker = UIPickerView()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        gpicker.delegate = genreDataDelegate
+        gpicker.dataSource = genreDataDelegate
+        
+        lpicker.delegate = langDataDelegate
+        lpicker.dataSource = langDataDelegate
+        
+        genreField.inputView = gpicker
+        languageField.inputView = lpicker
+    }
+    
+}
+    
+class GenrePickerDelegate : ViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+   var genreData = ["Action", "Biography", "Children", "Cookbook", "Comics", "Diaries", "Drama", "Encyclopedia", "History", "Horror", "Romance", "Self Help", "Sci-fi"];
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1;
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return genreData.count
     }
-    
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         genreField.text = genreData[row]
@@ -52,15 +70,26 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return genreData[row]
     }
-   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        picker.delegate = self
-        picker.dataSource = self
-        genreField.inputView = picker
-        
-       
-    }
+}
 
+class LangPickerDelegate: ViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    var langData = ["English (UK)", "English (US)", "French", "Spanish", "German" ]
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return langData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        languageField.text = langData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return langData[row]
+    }
 }
 

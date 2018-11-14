@@ -12,11 +12,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <pickerView contentMode="scaleToFill" id="oYO-N9-EmN">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                </pickerView>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Get_the_book___Share__save_and_view" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
@@ -136,23 +131,13 @@
                         <outlet property="titleLabel" destination="FN2-av-uxg" id="HPb-Wv-XCy"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pickerView contentMode="scaleToFill" id="oYO-N9-EmN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </pickerView>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="E5W-bC-gbe">
-            <objects>
-                <viewController id="Hi6-7z-aO9" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="G4h-bm-NkR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="YuY-eN-yee"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NV4-1O-bIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1001" y="99"/>
         </scene>
     </scenes>
 </document>
