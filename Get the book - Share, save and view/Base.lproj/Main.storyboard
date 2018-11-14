@@ -139,5 +139,20 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="qiX-oP-f3Q">
+            <objects>
+                <viewController id="eab-Rc-afp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ObF-t8-Cfo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qjX-fI-yxG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVM-RM-nsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-620" y="96"/>
+        </scene>
     </scenes>
 </document>
