@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D364C94C21ADCDC9002AFF4E /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364C94B21ADCDC9002AFF4E /* BookDetailsViewController.swift */; };
 		FE36B6E3219A2C90001A9979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36B6E2219A2C90001A9979 /* AppDelegate.swift */; };
 		FE36B6E5219A2C90001A9979 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36B6E4219A2C90001A9979 /* ViewController.swift */; };
 		FE36B6E8219A2C90001A9979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE36B6E6219A2C90001A9979 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D364C94B21ADCDC9002AFF4E /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
 		FE36B6DF219A2C90001A9979 /* Get the book - Share, save and view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get the book - Share, save and view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE36B6E2219A2C90001A9979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE36B6E4219A2C90001A9979 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				FE36B6E2219A2C90001A9979 /* AppDelegate.swift */,
 				FE36B6E4219A2C90001A9979 /* ViewController.swift */,
 				FE36B6E6219A2C90001A9979 /* Main.storyboard */,
+				D364C94B21ADCDC9002AFF4E /* BookDetailsViewController.swift */,
 				FE36B6E9219A2C93001A9979 /* Assets.xcassets */,
 				FE36B6EB219A2C93001A9979 /* LaunchScreen.storyboard */,
 				FE36B6EE219A2C93001A9979 /* Info.plist */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE36B6E5219A2C90001A9979 /* ViewController.swift in Sources */,
+				D364C94C21ADCDC9002AFF4E /* BookDetailsViewController.swift in Sources */,
 				FE36B6E3219A2C90001A9979 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
